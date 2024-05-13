@@ -1,4 +1,4 @@
-{pkgs,...}:
+{ pkgs, lib, ...}:
 {
 	home.file.".xinitrc".text = "exec i3";
 	xsession.windowManager.i3 = {
@@ -13,6 +13,9 @@
 				style = "";
 				size = 8.0;
 			};
+			keybindings = lib.mkOptionDefault ''
+				test
+			'';
 			startup = [
 				{
 					command = "${pkgs.nitrogen}/bin/nitrogen --restore";
