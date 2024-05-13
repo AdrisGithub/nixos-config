@@ -13,9 +13,14 @@
 				style = "";
 				size = 8.0;
 			};
-			startup = [{
-				command = "${pkgs.nitrogen}/bin/nitrogen --restore";
-			}];
+			startup = [
+				{
+					command = "${pkgs.nitrogen}/bin/nitrogen --restore";
+				}
+				{
+					command = "${pkgs.picom}/bin/picom"
+				}
+			];
 			gaps = {
 				smartBorders = "no_gaps";
 				smartGaps = true;

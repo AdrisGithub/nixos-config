@@ -1,5 +1,5 @@
 {
-	services.picom = {
+	packages.picom = {
 		enable = true;
 		shadow = true;
 		fade = true;
