@@ -5,6 +5,6 @@
     		isNormalUser = true;
     		description = "adri";
     		extraGroups = [ "networkmanager" "wheel" ];
-    		packages = with pkgs; [];
-  	};
+  		packages = [];
+	};
 }
