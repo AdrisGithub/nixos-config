@@ -29,7 +29,7 @@
 			"tztime local" = {
 				position = 4;
 				settings = {
-					format = "%Y-%m-%d %H:%M:%S"
+					format = "%Y-%m-%d %H:%M:%S";
 				};
 			};
 		};
