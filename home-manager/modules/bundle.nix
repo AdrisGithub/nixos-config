@@ -5,6 +5,7 @@
                 ./packages.nix
                 ./i3.nix
 		./picom.nix
+		./alacritty.nix
         ];
 }
 
