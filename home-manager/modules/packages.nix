@@ -1,6 +1,5 @@
 { pkgs, ...}:
 {
-	pkgs.config.allowUnfree = true;
 	home.packages = with pkgs; [
 		zellij
 		neofetch

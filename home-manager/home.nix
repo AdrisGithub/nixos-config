@@ -1,3 +1,4 @@
+{config, pkgs, lib, ...}:
 {
 	
 	home = {
@@ -8,6 +9,7 @@
 	imports = [
 		./modules/bundle.nix
 	];
+	config.allowUnfree = true;
 	# Let Home Manager install and manage itself.
   	programs.home-manager.enable = true;
 }
