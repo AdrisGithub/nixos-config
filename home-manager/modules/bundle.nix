@@ -5,6 +5,7 @@
                 ./packages.nix
                 ./i3.nix
 		./i3bar.nix
+		./flameshot.nix
 		./picom.nix
 		./alacritty.nix
         ];
