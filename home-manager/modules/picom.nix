@@ -5,8 +5,7 @@
 		shadow = true;
 		fade = true;
 		vSync = true;
-		inactiveOpacity = 0.4;
-		activeOpacity = 0.7;
+		inactiveOpacity = 0.6;
 	};
 }
 
