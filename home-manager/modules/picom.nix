@@ -1,5 +1,6 @@
+{pkgs,...}:
 {
-	packages.picom = {
+	pkgs.picom = {
 		enable = true;
 		shadow = true;
 		fade = true;
