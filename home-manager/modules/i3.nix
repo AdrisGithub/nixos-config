@@ -4,7 +4,7 @@
 	xsession.windowManager.i3 = {
 		enable = true;
 		startup = [{
-			command = "${pkgs.nitrogen}/bin/nitrogen --restore"
+			command = "${pkgs.nitrogen}/bin/nitrogen --restore";
 		}];
 		config = {
 			modifier = "Mod4";
