@@ -37,11 +37,11 @@ in {
 				};
 				italic = {
 					family = font_family;
-					style = "Italic"
+					style = "Italic";
 				};
 				normal = {
 					family = font_family;
-					style = "Bold"
+					style = "Bold";
 				};
 			};
 		};
