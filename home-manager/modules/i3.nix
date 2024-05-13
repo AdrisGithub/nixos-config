@@ -13,9 +13,9 @@
 				style = "";
 				size = 8.0;
 			};
-			keybindings = lib.mkOptionDefault ''
-				test
-			'';
+			keybindings = lib.mkOptionDefault {
+				"Mod4+Shift+s" = "exec ${pkgs.flameshot}/bin/flameshot gui";
+			};
 			startup = [
 				{
 					command = "${pkgs.nitrogen}/bin/nitrogen --restore";
