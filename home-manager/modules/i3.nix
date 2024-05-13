@@ -20,6 +20,7 @@
 			window = {
 				hideEdgeBorders = "smart";
 				border = 0;
+				titlebar = false;
 			};
 			bars = [{
 				position = "bottom";
