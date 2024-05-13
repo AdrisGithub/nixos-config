@@ -11,7 +11,7 @@
         flakeDir = "~/nix";
       in {
       nrs = "sudo nixos-rebuild switch --flake ${flakeDir}";
-      nfu = "nix flake update ${flakeDir}";
+      nfu = "sudo nix flake update ${flakeDir}";
       hms = "home-manager switch --flake ${flakeDir}";
     };
 
