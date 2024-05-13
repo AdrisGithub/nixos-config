@@ -11,10 +11,6 @@
       ./modules/bundle.nix
     ];
   
-  networking.hostName = "nixoslaptop"; # Define your hostname.
-  networking.networkmanager.enable = true;
-  networking.firewall.enable = false;
-
   # Set your time zone.
   time.timeZone = "Europe/Berlin";
 
