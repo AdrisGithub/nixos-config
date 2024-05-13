@@ -12,6 +12,15 @@
 				style = "";
 				size = 8.0;
 			};
+			gaps = {
+				smartBorders = "no_gaps";
+				smartGaps = "on";
+				inner = 10;
+			};
+			window = {
+				hideEdgeBorders = "smart";
+				border = 0;
+			};
 			bars = [{
 				position = "bottom";
 				fonts = {
