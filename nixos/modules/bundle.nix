@@ -4,5 +4,6 @@
 		./users.nix
 		./xserver.nix
 		./networking.nix
+		./font.nix
 	];
 }
