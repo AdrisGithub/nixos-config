@@ -1,7 +1,7 @@
 {config, pkgs, lib, ...}:
 {
 	
-	config.home = {
+	home = {
     		username = "adri";
     		homeDirectory = "/home/adri";
     		stateVersion = "23.11";
@@ -9,7 +9,7 @@
 	imports = [
 		./modules/bundle.nix
 	];
-	config.allowUnfree = true;
+	nixpkgs.config.allowUnfree = true;
 	# Let Home Manager install and manage itself.
-  	config.programs.home-manager.enable = true;
+  	programs.home-manager.enable = true;
 }
