@@ -7,7 +7,7 @@ in {
 		settings = {
 			shell = "${pkgs.zsh}/bin/zsh";
 			window = {
-				opacity = 0.6;
+				opacity = 0.7;
 				blur = true;
 				title = "Terminal";
 			};
