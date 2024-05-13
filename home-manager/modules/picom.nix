@@ -1,6 +1,6 @@
 {pkgs,...}:
 {
-	pkgs.picom = {
+	services.picom = {
 		enable = true;
 		shadow = true;
 		fade = true;
