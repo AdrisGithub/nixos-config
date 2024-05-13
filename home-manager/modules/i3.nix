@@ -14,7 +14,7 @@
 			};
 			gaps = {
 				smartBorders = "no_gaps";
-				smartGaps = "on";
+				smartGaps = true;
 				inner = 10;
 			};
 			window = {
