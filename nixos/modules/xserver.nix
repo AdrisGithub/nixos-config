@@ -12,9 +12,11 @@
 		};
 		xserver = {
 			displayManager.startx.enable = true;
+			xkb = {
+				layout = "de";
+				variant = "";
+			};
 			enable = true;
-			layout = "de";
-			xkbVariant = "";
 		};
 	};
 }
