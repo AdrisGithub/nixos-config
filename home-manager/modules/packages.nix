@@ -1,7 +1,7 @@
-{ pkgs, config, ...}:
+{ pkgs, ...}:
 {
-	config.allowUnfree = true;
-	config.home.packages = with pkgs; [
+	pkgs.config.allowUnfree = true;
+	home.packages = with pkgs; [
 		zellij
 		neofetch
 		vim
