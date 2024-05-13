@@ -7,7 +7,7 @@
 			interval = 1;
 		};
 		modules = {
-			"wireless wlan0" = {
+			"wireless wlp5s0" = {
 				position = 1;
 				settings = {
 					format_up = "  %essid: %bitrate";
