@@ -33,6 +33,8 @@
   console.keyMap = "de";
   
   nix.settings.experimental-features = [ "nix-command" "flakes"];
+  nix.gc.automatic = true;
+  nix.gc.options = "--delete-older-than 8d";
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
