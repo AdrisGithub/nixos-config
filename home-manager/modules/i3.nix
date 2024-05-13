@@ -18,7 +18,7 @@
 					command = "${pkgs.nitrogen}/bin/nitrogen --restore";
 				}
 				{
-					command = "${pkgs.picom}/bin/picom"
+					command = "${pkgs.picom}/bin/picom";
 				}
 			];
 			gaps = {
