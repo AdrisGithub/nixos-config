@@ -4,5 +4,6 @@
 		zellij
 		neofetch
 		vim
+		nitrogen
 	];
 }
