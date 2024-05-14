@@ -3,9 +3,9 @@
                 ./git.nix
                 ./zsh.nix
                 ./packages.nix
-                # ./i3.nix
+                ./i3.nix
 		# ./herbstluftwm.nix
-		./xmonad.nix
+		# ./xmonad.nix
 		./i3bar.nix
 		./flameshot.nix
 		./htop.nix
