@@ -29,7 +29,7 @@
     LC_TIME = "de_DE.UTF-8";
   };
   
-  services.gfvs.enable = true;
+  services.gvfs.enable = true;
   programs.thunar.enable = true;
   programs.thunar.plugins = with pkgs.xfce; [
    thunar-archive-plugin
