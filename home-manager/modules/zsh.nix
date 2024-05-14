@@ -13,6 +13,7 @@
       nrs = "sudo nixos-rebuild switch --flake ${flakeDir}";
       nfu = "sudo nix flake update ${flakeDir}";
       hms = "home-manager switch --flake ${flakeDir}";
+      "nix develop" = "nix develop -c $SHELL";
     };
 
     history.size = 10000;
