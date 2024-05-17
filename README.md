@@ -5,7 +5,7 @@ The hostname and username must be the same as in the Configuration
 and if not he configuration needs to be changed beforehand.
 This can be done in the flake.nix file. 
 
-Current Values: 
+Current Values: <br>
 Hostname => nixoslaptop <br>
 Username => adri
 
