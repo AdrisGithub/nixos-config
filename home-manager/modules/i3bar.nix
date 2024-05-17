@@ -7,27 +7,32 @@
 			interval = 1;
 		};
 		modules = {
-			"wireless wlp5s0" = {
+			"battery 0" = {
 				position = 1;
+				format = " %percentage";
+				integer_battery_capacity = true;
+			};
+			"wireless wlp5s0" = {
+				position = 2;
 				settings = {
 					format_up = "  %essid: %bitrate";
         				format_down = "no:  ";
 				};
 			};
 			"disk /" = {
-				position = 2;
+				position = 3;
 				settings = {
 					format = " %avail";
 				};
 			};
 			"memory" = {
-				position = 3;
+				position = 4;
 				settings = {
 					format = "U: %used, F: %free";
 				};
 			};
 			"tztime local" = {
-				position = 4;
+				position = 5;
 				settings = {
 					format = "%Y-%m-%d %H:%M:%S";
 				};
