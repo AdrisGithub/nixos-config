@@ -9,8 +9,9 @@
 		modules = {
 			"battery 0" = {
 				position = 1;
-				format = " %percentage";
-				integer_battery_capacity = true;
+				settings = {
+					format = " %percentage";
+				};
 			};
 			"wireless wlp5s0" = {
 				position = 2;
