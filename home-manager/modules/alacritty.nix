@@ -26,7 +26,7 @@ in {
 				TERM = "xterm-256color";
 			};
 			font = {
-				size = 14.0;
+				size = 9.0;
 				bold = {
 					family = font_family;
 					style = "Bold";

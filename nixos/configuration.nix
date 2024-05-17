@@ -28,7 +28,13 @@
     LC_TELEPHONE = "de_DE.UTF-8";
     LC_TIME = "de_DE.UTF-8";
   };
-
+  
+  services.gvfs.enable = true;
+  programs.thunar.enable = true;
+  programs.thunar.plugins = with pkgs.xfce; [
+   thunar-archive-plugin
+   thunar-volman
+  ];
   # Configure console keymap
   console.keyMap = "de";
   
