@@ -6,7 +6,7 @@ and if not he configuration needs to be changed beforehand.
 This can be done in the flake.nix file. 
 
 Current Values: 
-Hostname => nixoslaptop
+Hostname => nixoslaptop <br>
 Username => adri
 
 
