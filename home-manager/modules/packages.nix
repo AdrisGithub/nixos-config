@@ -8,6 +8,5 @@
 		discord
 		jetbrains.jdk
 		jetbrains.idea-ultimate
-		prismlaucher
 	];
 }
