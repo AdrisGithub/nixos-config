@@ -6,6 +6,6 @@
     		isNormalUser = true;
     		description = "adri";
     		extraGroups = [ "networkmanager" "wheel" ];
-  		packages = [];
+  		packages = with pkgs; [ prismlauncher ];
 	};
 }
