@@ -8,7 +8,7 @@
 
     shellAliases =
       let
-        flakeDir = "~/nix";
+        flakeDir = "~/nix/laptop";
       in {
       nrs = "sudo nixos-rebuild switch --flake ${flakeDir}";
       nfu = "sudo nix flake update ${flakeDir}";
