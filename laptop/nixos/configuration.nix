@@ -6,11 +6,12 @@
 
 {
   imports =
-    [ # Include the results of the hardware scan.
+    [
+      # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./modules/bundle.nix
     ];
-  
+
   # Set your time zone.
   time.timeZone = "Europe/Berlin";
 
@@ -28,12 +29,12 @@
     LC_TELEPHONE = "de_DE.UTF-8";
     LC_TIME = "de_DE.UTF-8";
   };
-  
+
   services.gvfs.enable = true;
   # Configure console keymap
   console.keyMap = "de";
-  
-  nix.settings.experimental-features = [ "nix-command" "flakes"];
+
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nix.gc.automatic = true;
   nix.gc.options = "--delete-older-than 8d";
 
