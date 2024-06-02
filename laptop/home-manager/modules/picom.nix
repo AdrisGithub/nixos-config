@@ -1,11 +1,11 @@
-{pkgs,...}:
+{ pkgs, ... }:
 {
-	services.picom = {
-		enable = true;
-		shadow = true;
-		fade = true;
-		vSync = true;
-		inactiveOpacity = 0.6;
-	};
+  services.picom = {
+    enable = true;
+    shadow = true;
+    fade = true;
+    vSync = true;
+    inactiveOpacity = 0.6;
+  };
 }
 

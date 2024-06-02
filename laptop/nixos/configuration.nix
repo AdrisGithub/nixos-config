@@ -6,11 +6,12 @@
 
 {
   imports =
-    [ # Include the results of the hardware scan.
+    [
+      # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./modules/bundle.nix
     ];
-  
+
   # Set your time zone.
   time.timeZone = "Europe/Berlin";
 
@@ -37,11 +38,12 @@ services.pipewire = {
   # If you want to use JACK applications, uncomment this
   #jack.enable = true;
 };  
+
   services.gvfs.enable = true;
   # Configure console keymap
   console.keyMap = "de";
-  
-  nix.settings.experimental-features = [ "nix-command" "flakes"];
+
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nix.gc.automatic = true;
   nix.gc.options = "--delete-older-than 8d";
 
