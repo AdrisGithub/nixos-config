@@ -11,7 +11,6 @@
       ./hardware-configuration.nix
       ./modules/bundle.nix
     ];
-  virtualisation.memorySize = 2048; 
   # Set your time zone.
   time.timeZone = "Europe/Berlin";
 
