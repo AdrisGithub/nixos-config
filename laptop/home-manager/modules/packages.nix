@@ -3,6 +3,7 @@
   home.packages = with pkgs; [
     neofetch
     vim
+    pavucontrol
     nitrogen
     firefox
     discord

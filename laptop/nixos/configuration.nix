@@ -11,7 +11,7 @@
       ./hardware-configuration.nix
       ./modules/bundle.nix
     ];
-
+  virtualisation.memorySize = 2048; 
   # Set your time zone.
   time.timeZone = "Europe/Berlin";
 
@@ -38,7 +38,6 @@
     # If you want to use JACK applications, uncomment this
     #jack.enable = true;
   };
-
   services.gvfs.enable = true;
   # Configure console keymap
   console.keyMap = "de";
