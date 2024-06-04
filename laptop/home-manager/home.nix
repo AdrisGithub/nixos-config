@@ -4,7 +4,7 @@
   home = {
     username = "adri";
     homeDirectory = "/home/adri";
-    stateVersion = "23.11";
+    stateVersion = "24.05";
   };
   imports = [
     ./modules
