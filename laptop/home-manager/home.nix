@@ -7,7 +7,7 @@
     stateVersion = "23.11";
   };
   imports = [
-    ./modules/bundle.nix
+    ./modules
   ];
   nixpkgs.config.allowUnfree = true;
   # Let Home Manager install and manage itself.
