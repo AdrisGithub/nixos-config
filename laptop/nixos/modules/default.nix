@@ -6,5 +6,8 @@
     ./networking.nix
     ./font.nix
     ./virtualisation.nix
+    ./nix.nix
+    ./locale.nix
+    ./pipewire.nix
   ];
 }
