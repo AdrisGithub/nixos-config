@@ -9,6 +9,7 @@
     ./nix.nix
     ./locale.nix
     ./qemu.nix
+    ./mysql.nix
     ./pipewire.nix
   ];
 }

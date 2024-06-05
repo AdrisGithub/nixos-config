@@ -11,12 +11,7 @@
       ./hardware-configuration.nix
       ./modules
     ];
-  services.mysql = {
-  enable = true;
-  package = pkgs.mariadb;
-};
-
-  # Allow unfree packages
+  # Allow Unfree packages
   nixpkgs.config.allowUnfree = true;
 
   # Enable the OpenSSH daemon.
