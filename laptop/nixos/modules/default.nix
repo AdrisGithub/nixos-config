@@ -8,6 +8,7 @@
     ./virtualisation.nix
     ./nix.nix
     ./locale.nix
+    ./qemu.nix
     ./pipewire.nix
   ];
 }
