@@ -7,6 +7,7 @@
     nitrogen
     firefox
     discord
+    obsidian
     jetbrains.jdk
     jetbrains.idea-ultimate
   ];
