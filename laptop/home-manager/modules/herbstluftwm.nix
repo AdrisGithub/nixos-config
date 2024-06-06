@@ -1,5 +1,5 @@
 {
-  home.file.".xinitrc".text = "exec herbstluftwm --locked";
+  # home.file.".xinitrc".text = "exec herbstluftwm --locked";
   xsession.windowManager.herbstluftwm.enable = true;
 }
 
