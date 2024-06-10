@@ -25,4 +25,12 @@
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "24.05"; # Did you read the comment?
 
+  services.logind.extraConfig = ''
+          	# don’t shutdown when power button is short-pressed
+            HandlePowerKey=ignore
+        	# Dont shutdown when closing window
+        	HandleLidSwitch=ignore
+      	HandleLidSwitchDocked=ignore
+    	HandleLidSwitchExternalPower=ignore
+  '';
 }
