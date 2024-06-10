@@ -11,6 +11,7 @@
         flakeDir = "~/nix/laptop";
       in
       {
+        "nix-shell" = "${pkgs.cached-nix-shell}/bin/cached-nix-shell";
         nrs = "sudo nixos-rebuild switch --flake ${flakeDir}";
         nfu = "sudo nix flake update ${flakeDir}";
         hms = "home-manager switch --flake ${flakeDir}";
