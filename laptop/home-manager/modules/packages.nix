@@ -10,5 +10,6 @@
     obsidian
     jetbrains.jdk
     jetbrains.idea-ultimate
+    prismlauncher
   ];
 }
