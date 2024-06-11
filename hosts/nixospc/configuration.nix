@@ -9,7 +9,7 @@
     [
       # Include the results of the hardware scan.
       ./hardware-configuration.nix
-	./modules
+      ./modules
     ];
 
   # Bootloader.
@@ -46,23 +46,6 @@
   };
 
   # Configure keymap in X11
-  services.xserver = {
-    layout = "de";
-    xkbVariant = "";
-    enable = true;
-    displayManager = {
-      defaultSession = "none+i3";
-    };
-    windowManager.i3 = {
-      enable = true;
-      extraPackages = with pkgs; [
-        dmenu
-        i3status
-        i3lock
-      ];
-    };
-  };
-
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
