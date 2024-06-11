@@ -2,7 +2,7 @@
 {
   home.file.".xinitrc".text = ''exec i3'';
   xsession.windowManager.i3 = {
-    enable = false;
+    enable = true;
     config = {
       modifier = "Mod4";
       terminal = "${pkgs.alacritty}/bin/alacritty";

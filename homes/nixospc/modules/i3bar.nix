@@ -1,6 +1,6 @@
 {
   programs.i3status = {
-    enable = false;
+    enable = true;
     enableDefault = false;
     general = {
       colors = true;

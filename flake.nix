@@ -43,6 +43,7 @@
               home-manager.useUserPackages = true;
               home-manager.users.${specialArgs.username} = import ./homes/nixospc/home.nix;
               home-manager.extraSpecialArgs = specialArgs;
+		home-manager.backupFileExtension = "backup";
             }
           ];
         };
