@@ -7,7 +7,7 @@
       modifier = "Mod4";
       terminal = "${pkgs.alacritty}/bin/alacritty";
       menu = "${pkgs.dmenu}/bin/dmenu_run";
-      defaultWorkspace = "workspace number 1";
+      defaultWorkspace = "workspace number 2";
       fonts = {
         names = [ "JetBrainsMono Nerd Font" ];
         style = "";

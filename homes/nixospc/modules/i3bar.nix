@@ -7,13 +7,7 @@
       interval = 1;
     };
     modules = {
-      "battery 0" = {
-        position = 1;
-        settings = {
-          format = " %percentage";
-        };
-      };
-      "wireless wlp5s0" = {
+      "wireless wlp3s0" = {
         position = 2;
         settings = {
           format_up = "  %essid: %bitrate";
