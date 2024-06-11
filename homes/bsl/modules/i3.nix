@@ -23,9 +23,9 @@
         {
           command = "${pkgs.picom}/bin/picom";
         }
-{
-	command = "${pkgs.flameshot}/bin/flameshot";
-}
+        {
+          command = "${pkgs.flameshot}/bin/flameshot";
+        }
       ];
       gaps = {
         smartBorders = "no_gaps";
