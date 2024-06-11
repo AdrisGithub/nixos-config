@@ -7,7 +7,7 @@
     nitrogen
     firefox
     discord
-    obsidian
+    #obsidian
     jetbrains.jdk
     jetbrains.idea-ultimate
     prismlauncher
