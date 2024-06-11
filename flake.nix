@@ -36,7 +36,7 @@
             username = "adri";
           };
           modules = [
-            ./hosts/desktop/configuration.nix
+            ./hosts/nixospc/configuration.nix
           ];
         };
       };
