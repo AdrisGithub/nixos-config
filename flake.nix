@@ -19,7 +19,7 @@
           username = "adri";
         };
         modules = [
-          ./laptop/nixos/configuration.nix
+          ./hosts/bsl/configuration.nix
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
@@ -29,9 +29,5 @@
           }
         ];
       };
-      #    homeConfigurations.adri = home-manager.lib.homeManagerConfiguration {
-      #      pkgs = nixpkgs.legacyPackages.${system};
-      #      modules = [ ./home-manager/home.nix ];
-      #    };
     };
 }
