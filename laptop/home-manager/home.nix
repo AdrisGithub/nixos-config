@@ -1,9 +1,9 @@
-{ config, pkgs, lib, nvim-adri, ... }:
+{ username, ... }:
 {
 
   home = {
-    username = "adri";
-    homeDirectory = "/home/adri";
+    inherit username;
+    homeDirectory = "/home/${username}";
     stateVersion = "24.05";
   };
   imports = [
