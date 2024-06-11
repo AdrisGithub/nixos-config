@@ -6,7 +6,8 @@
 
 {
   imports =
-    [ # Include the results of the hardware scan.
+    [
+      # Include the results of the hardware scan.
       ./hardware-configuration.nix
     ];
 
@@ -49,24 +50,24 @@
     xkbVariant = "";
     enable = true;
     displayManager = {
-      defaultSession = "none+i3"; 
-   }; 
-   windowManager.i3 = {
-    enable = true;
-    extraPackages = with pkgs; [
-	dmenu
-	i3status
-	i3lock
-];	
-  };
+      defaultSession = "none+i3";
+    };
+    windowManager.i3 = {
+      enable = true;
+      extraPackages = with pkgs; [
+        dmenu
+        i3status
+        i3lock
+      ];
+    };
   };
 
   security.rtkit.enable = true;
   services.pipewire = {
-   enable = true;
-   alsa.enable = true;
-   alsa.support32Bit = true;
-   pulse.enable = true;
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
   };
   # Configure console keymap
   console.keyMap = "de";
@@ -78,15 +79,15 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [ vim git discord firefox pavucontrol ];
   };
-  
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-  #  wget
+    #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    #  wget
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

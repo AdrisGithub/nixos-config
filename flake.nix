@@ -37,6 +37,13 @@
           };
           modules = [
             ./hosts/nixospc/configuration.nix
+            home-manager.nixosModules.home-manager
+            {
+              home-manager.useGlobalPkgs = true;
+              home-manager.useUserPackages = true;
+              home-manager.users.${specialArgs.username} = import ./homes/nixospc/home.nix;
+              home-manager.extraSpecialArgs = specialArgs;
+            }
           ];
         };
       };
