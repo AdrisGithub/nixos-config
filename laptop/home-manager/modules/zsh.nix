@@ -1,4 +1,4 @@
-{ config, pkgs, system, inputs , ... }: {
+{ config, pkgs, system, inputs, ... }: {
   programs.zsh = {
     enable = true;
     enableCompletion = true;
@@ -8,14 +8,13 @@
 
     shellAliases =
       let
-        flakeDir = "~/nix/laptop";
+        flakeDir = "~/nix";
       in
       {
-	nvim = "${inputs.nvim-adri.packages.${system}.default}/bin/nvim";
+        nvim = "${inputs.nvim-adri.packages.${system}.default}/bin/nvim";
         "nix-shell" = "${pkgs.cached-nix-shell}/bin/cached-nix-shell";
         nrs = "sudo nixos-rebuild switch --flake ${flakeDir}";
         nfu = "sudo nix flake update ${flakeDir}";
-        hms = "home-manager switch --flake ${flakeDir}";
         "nix develop" = "nix develop -c $SHELL";
       };
 
