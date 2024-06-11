@@ -13,21 +13,32 @@
       system = "x86_64-linux";
     in
     {
-      nixosConfigurations.nixoslaptop = nixpkgs.lib.nixosSystem rec {
-        specialArgs = {
-          inherit inputs system;
-          username = "adri";
+      nixosConfigurations = {
+        nixoslaptop = nixpkgs.lib.nixosSystem rec {
+          specialArgs = {
+            inherit inputs system;
+            username = "adri";
+          };
+          modules = [
+            ./hosts/bsl/configuration.nix
+            home-manager.nixosModules.home-manager
+            {
+              home-manager.useGlobalPkgs = true;
+              home-manager.useUserPackages = true;
+              home-manager.users.${specialArgs.username} = import ./homes/bsl/home.nix;
+              home-manager.extraSpecialArgs = specialArgs;
+            }
+          ];
         };
-        modules = [
-          ./hosts/bsl/configuration.nix
-          home-manager.nixosModules.home-manager
-          {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.${specialArgs.username} = import ./homes/bsl/home.nix;
-            home-manager.extraSpecialArgs = specialArgs;
-          }
-        ];
+        nixospc = nixpkgs.lib.nixosSystem rec {
+          specialArgs = {
+            inherit inputs system;
+            username = "adri";
+          };
+          modules = [
+            ./hosts/desktop/configuration.nix
+          ];
+        };
       };
     };
 }
