@@ -24,7 +24,7 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.${specialArgs.username} = import ./laptop/home-manager/home.nix;
+            home-manager.users.${specialArgs.username} = import ./homes/bsl/home.nix;
             home-manager.extraSpecialArgs = specialArgs;
           }
         ];

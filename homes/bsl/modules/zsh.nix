@@ -12,7 +12,7 @@
       in
       {
         nvim = "${inputs.nvim-adri.packages.${system}.default}/bin/nvim";
-        "nix-shell" = "${pkgs.cached-nix-shell}/bin/cached-nix-shell";
+        nix-shell = "${pkgs.cached-nix-shell}/bin/cached-nix-shell";
         nrs = "sudo nixos-rebuild switch --flake ${flakeDir}";
         nfu = "sudo nix flake update ${flakeDir}";
         "nix develop" = "nix develop -c $SHELL";
