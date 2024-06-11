@@ -1,4 +1,4 @@
-{ config, pkgs, ... }: {
+{ config, pkgs, system, inputs , ... }: {
   programs.zsh = {
     enable = true;
     enableCompletion = true;
@@ -11,6 +11,7 @@
         flakeDir = "~/nix/laptop";
       in
       {
+	nvim = "${inputs.nvim-adri.packages.${system}.nvim}/bin/nvim";
         "nix-shell" = "${pkgs.cached-nix-shell}/bin/cached-nix-shell";
         nrs = "sudo nixos-rebuild switch --flake ${flakeDir}";
         nfu = "sudo nix flake update ${flakeDir}";
