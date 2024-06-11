@@ -1,4 +1,4 @@
-{ username, pkgs, ... }:
+{ username, ... }:
 {
 
   home = {
@@ -12,6 +12,5 @@
   nixpkgs.config.allowUnfree = true;
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
-  home.packages = [ pkgs.discord ];
 
 }
