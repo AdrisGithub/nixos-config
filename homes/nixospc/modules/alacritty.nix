@@ -8,7 +8,7 @@ in
     settings = {
       shell = "${pkgs.zsh}/bin/zsh";
       window = {
-        opacity = 0.7;
+        opacity = 0.85;
         blur = true;
         title = "Terminal";
       };
@@ -27,7 +27,7 @@ in
         TERM = "xterm-256color";
       };
       font = {
-        size = 9.0;
+        size = 13.5;
         bold = {
           family = font_family;
           style = "Bold";

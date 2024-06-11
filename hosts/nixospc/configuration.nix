@@ -61,7 +61,7 @@
     isNormalUser = true;
     description = "adri";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [ vim git firefox pavucontrol ];
+    packages = with pkgs; [ vim ];
   };
 
   # Allow unfree packages
