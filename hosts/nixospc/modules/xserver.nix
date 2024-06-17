@@ -16,6 +16,7 @@
         layout = "de";
         variant = "";
       };
+      videoDrivers = [ "nvidia" ];
       enable = true;
     };
   };

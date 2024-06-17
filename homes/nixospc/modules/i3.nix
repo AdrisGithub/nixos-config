@@ -10,8 +10,8 @@
       defaultWorkspace = "workspace number 2";
       fonts = {
         names = [ "JetBrainsMono Nerd Font" ];
-        style = "";
-        size = 8.0;
+        style = "Bold";
+        size = 10.0;
       };
       keybindings = lib.mkOptionDefault {
         "Mod4+Shift+s" = "exec ${pkgs.flameshot}/bin/flameshot gui";
@@ -41,7 +41,7 @@
         position = "bottom";
         fonts = {
           names = [ "JetBrainsMono Nerd Font" ];
-          size = 7.5;
+          size = 9.5;
         };
         statusCommand = "${pkgs.i3status}/bin/i3status";
       }];

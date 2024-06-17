@@ -1,3 +1,10 @@
 { pkgs, ... }: {
-  home.packages = with pkgs; [ firefox discord pavucontrol ];
+  home.packages = with pkgs;
+    [
+      steam
+      firefox
+      discord
+      pavucontrol
+      prismlauncher
+    ];
 }
