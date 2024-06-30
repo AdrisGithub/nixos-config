@@ -319,11 +319,11 @@
         "nixvim": "nixvim"
       },
       "locked": {
-        "lastModified": 1719686109,
-        "narHash": "sha256-2ptoEjxZXMDnCgG0y8kI6sPSimux2nQYLPo9z4PgSdQ=",
+        "lastModified": 1719695123,
+        "narHash": "sha256-H1CZ+JrzhBxhW17I8MsCKHuTJra4ENCgK5CZPwSYHqE=",
         "owner": "AdrisGithub",
         "repo": "vim-config",
-        "rev": "9ebe79f949991da6d1a7bb9b1983b2e96060c2c2",
+        "rev": "f6eb5a69bbfb8d5c8d3b9f2c6f3bf3072250d22f",
         "type": "github"
       },
       "original": {
