@@ -4,7 +4,7 @@
     neofetch
     vim
     pavucontrol
-    steam
+    #steam
     nitrogen
     firefox
     discord
