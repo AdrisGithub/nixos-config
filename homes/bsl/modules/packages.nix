@@ -4,12 +4,13 @@
     neofetch
     vim
     pavucontrol
+    steam
     nitrogen
     firefox
     discord
     #obsidian
-    jetbrains.jdk
-    jetbrains.idea-ultimate
-    prismlauncher
+    #jetbrains.jdk
+    #jetbrains.idea-ultimate
+    #prismlauncher
   ];
 }
