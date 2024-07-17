@@ -5,6 +5,7 @@
     vim
     pavucontrol
     #steam
+    nodejs
     nitrogen
     firefox
     discord
