@@ -31,10 +31,6 @@
     localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
   };
 
-  services.mysql = {
-    enable = true;
-    package = pkgs.mariadb;
-  };
 
   services.logind.extraConfig = ''
           	# don’t shutdown when power button is short-pressed
